@@ -49,6 +49,5 @@ namespace CapaPresentacionAdmin.Controllers
             respuesta = new CN_Usuarios().Eliminar(id, out mensaje);
             return Json(new { resultado = respuesta, mensaje = mensaje }, JsonRequestBehavior.AllowGet);
         }
-        // Comentario agregado para terminar de configurar gitBash.
     }
 }
