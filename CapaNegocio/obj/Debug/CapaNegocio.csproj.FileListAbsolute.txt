@@ -1,0 +1,11 @@
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Vaqui\source\repos\CursoMVC\CapaNegocio\obj\Debug\CapaNegocio.pdb
