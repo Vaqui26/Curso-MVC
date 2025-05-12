@@ -39,14 +39,14 @@ namespace CapaNegocio
             {
                 MailMessage mail = new MailMessage();
                 mail.To.Add(correo);
-                mail.From = new MailAddress("nicolasvaccaro24@gmail.com");
+                mail.From = new MailAddress("correoproyectosvaccaro@gmail.com");
                 mail.Subject = asunto;
                 mail.Body = mensaje;
                 mail.IsBodyHtml = true;
 
                 var smtp = new SmtpClient()
                 {
-                    Credentials = new NetworkCredential("nicolasvaccaro24@gmail.com", "pbya zgte cfxf lxqu"),
+                    Credentials = new NetworkCredential("correoproyectosvaccaro@gmail.com", "ddxz reel lbva yvbg"),
                     Host = "smtp.gmail.com",
                     Port = 587,
                     EnableSsl = true,
