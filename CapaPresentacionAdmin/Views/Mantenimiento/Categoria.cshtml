@@ -84,7 +84,7 @@
 
     $(document).ready(function () {
         $.ajax({
-            url: '@Url.Action("ListarUsuarios", "Home")',
+            url: '@Url.Action("ListarCategorias", "Mantenimiento")',
             type: "GET",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
@@ -98,14 +98,12 @@
             responsive: true,
             ordening: false,
             "ajax": {
-                url: '@Url.Action("ListarUsuarios", "Home")',
+                url: '@Url.Action("ListarCategorias", "Mantenimiento")',
                 type: "GET",
                 dataType: "json"
             },
             "columns": [
-                { "data": "Nombres" },
-                { "data": "Apellidos" },
-                { "data": "Correo" },
+                { "data": "Descripcion" },
                 {
                     "data": "Activo", "render": function (valor) {
                     if (valor) {
@@ -131,17 +129,13 @@
         function abrirModal(json) {
 
             $('#txtId').val(0);
-            $('#txtNombres').val("");
-            $('#txtApellidos').val("");
-            $('#txtCorreo').val("");
+            $('#txtDescripcion').val("");
             $('#cloActivo').val(1);
             $("#mensajeError").hide();
 
             if (json != null) {
-                $('#txtId').val(json.IdUsuario);
-                $('#txtNombres').val(json.Nombres);
-                $('#txtApellidos').val(json.Apellidos);
-                $('#txtCorreo').val(json.Correo);
+                $('#txtId').val(json.IdCategoria);
+                $('#txtDescripcion').val(json.Descripcion);
                 $('#cloActivo').val(json.Activo == true ? 1 : 0);
             }
 
@@ -156,12 +150,12 @@
         });
 
         $("#tablaUsers tbody").on("click", ".btn-eliminar", function () {
-            var usuarioSeleccionado = $(this).closest("tr");
-            var data = tablaData.row(usuarioSeleccionado).data();
+            var categoriaSeleccionada = $(this).closest("tr");
+            var data = tablaData.row(categoriaSeleccionada).data();
 
             swal({
                 title: "Esta Seguro?",
-                text: "¿Desea eliminar el usuario?",
+                text: "¿Desea eliminar la categoria?",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonClass: "btn-primary",
@@ -171,14 +165,14 @@
             },
             function () {
                  $.ajax({
-                      url: '@Url.Action("EliminarUsuario","Home")',
+                      url: '@Url.Action("EliminarCategoria", "Mantenimiento")',
                       type: "POST",
-                      data: JSON.stringify({ id: data.IdUsuario }),
+                      data: JSON.stringify({ id: data.IdCategoria }),
                       dataType: "json",
                       contentType: "application/json; charset=utf-8",
                       success: function (data) {
                           if (data.resultado) {
-                              tablaData.row(usuarioSeleccionado).remove().draw();
+                              tablaData.row(categoriaSeleccionada).remove().draw();
                           } else {
                               swap("No se puede eliminar!", data.mensaje, "error");
                           }
@@ -192,27 +186,25 @@
 
         function guardar() {
 
-            var Usuario = {
-                IdUsuario: $('#txtId').val(),
+            var Categoria = {
+                IdCategoria: $('#txtId').val(),
                 Activo: $('#cloActivo').val() == 1 ? true : false,
-                Nombres: $('#txtNombres').val(),
-                Apellidos: $('#txtApellidos').val(),
-                Correo: $('#txtCorreo').val(),
+                Descripcion: $('#txtDescripcion').val(),
             }
             $.ajax({
-                url: '@Url.Action("GuardarUsuario","Home")',
+                url: '@Url.Action("GuardarCategoria", "Mantenimiento")',
                 type: "POST",
-                data: JSON.stringify({ user: Usuario }),
+                data: JSON.stringify({ categoria : Categoria }),
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
 
                     $(".modal-body").LoadingOverlay("hide");
 
-                    if (Usuario.IdUsuario == 0) {
+                    if (Categoria.IdCategoria == 0) {
                         if (data.resultado != 0) {
-                            Usuario.IdUsuario = data.resultado;
-                            tablaData.row.add(Usuario).draw(false);
+                            Categoria.IdCategoria = data.resultado;
+                            tablaData.row.add(Categoria).draw(false);
                             $('#FormModal').hide();
                         } else {
                             $('#mensajeError').text(data.mensaje);
@@ -220,7 +212,7 @@
                         }
                     } else {
                         if (data.resultado) {
-                            tablaData.row(filaSeleccionda).data(Usuario).draw(false);
+                            tablaData.row(filaSeleccionda).data(Categoria).draw(false);
                             filaSeleccionda = null;
                             $('#FormModal').hide();
                         } else {
