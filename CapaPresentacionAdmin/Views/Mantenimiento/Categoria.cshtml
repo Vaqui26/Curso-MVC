@@ -60,7 +60,7 @@
                 <!--Mensaje de Alerta-->
                 <div class="row">
                     <div class="col-12">
-                        <div id="mensajeError" class="alert alert-danger" role="alert">
+                        <div id="mensajeError" class="alert alert-danger mt-2" role="alert">
                             Mensaje de error
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                         if (data.resultado != 0) {
                             Categoria.IdCategoria = data.resultado;
                             tablaData.row.add(Categoria).draw(false);
-                            $('#FormModal').hide();
+                            $('#FormModal').modal("hide");
                         } else {
                             $('#mensajeError').text(data.mensaje);
                             $('#mensajeError').show();
@@ -214,7 +214,7 @@
                         if (data.resultado) {
                             tablaData.row(filaSeleccionda).data(Categoria).draw(false);
                             filaSeleccionda = null;
-                            $('#FormModal').hide();
+                            $('#FormModal').modal("hide");
                         } else {
                             $('#mensajeError').text(data.mensaje);
                             $('#mensajeError').show();
@@ -235,7 +235,6 @@
                     })
                 }
             });
-            $('#FormModal').modal("hide");
         }
 
     </script>

@@ -222,7 +222,7 @@
                         if (data.resultado != 0) {
                             Usuario.IdUsuario = data.resultado;
                             tablaData.row.add(Usuario).draw(false);
-                            $('#FormModal').hide();
+                            $('#FormModal').modal("hide");
                         } else {
                             $('#mensajeError').text(data.mensaje);
                             $('#mensajeError').show();
@@ -231,7 +231,7 @@
                         if (data.resultado) {
                             tablaData.row(filaSeleccionda).data(Usuario).draw(false);
                             filaSeleccionda = null;
-                            $('#FormModal').hide();
+                            $('#FormModal').modal("hide");
                         } else {
                             $('#mensajeError').text(data.mensaje);
                             $('#mensajeError').show();
@@ -252,7 +252,6 @@
                     })
                 }
             });
-            $('#FormModal').modal("hide");
         }
 
     </script>
