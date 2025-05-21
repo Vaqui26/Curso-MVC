@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1015B951-50FF-4659-BB63-99C8DB40BA97}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\vaqui\\source\\repos\\cursomvc\\capaentidad\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1015B951-50FF-4659-BB63-99C8DB40BA97}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE7F23B1-8460-4B89-83CE-386C72C37A1E}|CapaDatos\\CapaDatos.csproj|c:\\users\\vaqui\\source\\repos\\cursomvc\\capadatos\\cd_categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7F23B1-8460-4B89-83CE-386C72C37A1E}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7F23B1-8460-4B89-83CE-386C72C37A1E}|CapaDatos\\CapaDatos.csproj|c:\\users\\vaqui\\source\\repos\\cursomvc\\capadatos\\cd_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7F23B1-8460-4B89-83CE-386C72C37A1E}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,25 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Marca.cs",
-              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaEntidad\\Marca.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\Marca.cs",
-              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaEntidad\\Marca.cs",
-              "RelativeToolTip": "CapaEntidad\\Marca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T01:04:44.101Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CD_Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaDatos\\CD_Categoria.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Categoria.cs",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaDatos\\CD_Categoria.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Categoria.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:28:43.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CD_Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaDatos\\CD_Producto.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Producto.cs",
+              "ToolTip": "C:\\Users\\Vaqui\\source\\repos\\CursoMVC\\CapaDatos\\CD_Producto.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Producto.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:28:25.473Z",
+              "EditorCaption": ""
             }
           ]
         }
